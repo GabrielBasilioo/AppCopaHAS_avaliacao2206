@@ -6,9 +6,19 @@
     <ScrollView>
         <VerticalStackLayout Spacing="3" Padding="15">
             <Picker Title="---Seleção---" SelectedItem="{Binding SelecaoSelecionada}"
-            ItemsSource="{Binding Selecoes}"
-            ItemDisplayBinding="{Binding Pais}"/>   
-            <Button Text="Salvar" Command="{Binding SalvarCommand}"></Button>
+          ItemsSource="{Binding Selecoes}"
+          ItemDisplayBinding="{Binding Pais}"/>
+      
+      <Label Text="Nome do Jogador" />
+      <Entry Text="{Binding Nome}" />
+      
+      <Label Text="Posição"/>
+      <Entry Text="{Binding Posicao}"/>
+      
+      <Label Text="Número da Camisa"/>
+      <Entry Text="{Binding Numerocamisa }"  
+             Keyboard="Numeric" />
+<Button Text="Salvar" Command="{Binding SalvarCommand}"></Button>
         </VerticalStackLayout>
     </ScrollView>
 </ContentPage>
